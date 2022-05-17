@@ -1,0 +1,57 @@
+@mixin cercle {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: white;
+
+    &:hover {
+        background: #F1CDB3;
+    }
+}
+
+
+@mixin button-primary {
+    display: flex;
+    font-family: Georgia;
+    text-decoration: none;
+    color: #292929;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    line-height: 130%;
+    background: #F1CDB3;
+    border-radius: 100px;
+    letter-spacing: 0.06em;
+
+    &:hover {
+        background-color: #FDDCC4;
+    }
+}
+
+@mixin button-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+
+
+text-decoration: none;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    &:hover{
+        background: #FDDCC4;
+        border: 0px solid #F1CDB3;
+    }
+}
